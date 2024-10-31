@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link rel="stylesheet" href="assets/css/styles.css" />
 
     <!-- =====BOX ICONS===== -->
@@ -11,15 +10,15 @@
       href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
       rel="stylesheet"
     />
-
-    <title>Portfolio website complete</title>
+    <title>Portfolio Website</title>
   </head>
+
   <body>
     <!--===== HEADER =====-->
     <header class="l-header">
       <nav class="nav bd-grid">
         <div>
-          <a href="#" class="nav__logo"></a>
+          <a href="#" class="nav__logo">Diki Sugiri</a>
         </div>
 
         <div class="nav__menu" id="nav-menu">
@@ -53,22 +52,23 @@
       <section class="home bd-grid" id="home">
         <div class="home__data">
           <h1 class="home__title">
-            Hi,<br />I'am <span class="home__title-color">Diki Sugiri</span
+            Hi,<br />I'm <span class="home__title-color">Diki Sugiri</span
             ><br />
             Designer Grafis
           </h1>
-
           <a href="#contact" class="button">Contact</a>
         </div>
 
         <div class="home__social">
-          <a href="" class="home__social-icon"
+          <a href="#" class="home__social-icon" aria-label="LinkedIn"
             ><i class="bx bxl-linkedin"></i
           ></a>
-          <a href="" class="home__social-icon"
+          <a href="#" class="home__social-icon" aria-label="Behance"
             ><i class="bx bxl-behance"></i
           ></a>
-          <a href="" class="home__social-icon"><i class="bx bxl-github"></i></a>
+          <a href="#" class="home__social-icon" aria-label="GitHub"
+            ><i class="bx bxl-github"></i
+          ></a>
         </div>
 
         <div class="home__img">
@@ -101,42 +101,33 @@
       <!--===== ABOUT =====-->
       <section class="about section" id="about">
         <h2 class="section-title">About</h2>
-
         <div class="about__container bd-grid">
           <div class="about__img">
-            <img src="assets/img/dikib.jpg" alt="" />
+            <img src="assets/img/dikib.jpg" alt="Diki Sugiri" />
           </div>
-
           <div>
             <h2 class="about__subtitle">I'am Diki Sugiri</h2>
             <p class="about__text">
               Hello! I'm Diki Sugiri, a passionate graphic designer with
               experience in creating stunning visuals and impactful designs.
-              Check out my portfolio below!
             </p>
           </div>
         </div>
       </section>
 
       <!--===== SKILLS =====-->
-      <!--===== SKILLS =====-->
       <section class="skills section" id="skills">
         <h2 class="section-title">Skills</h2>
-
         <div class="skills__container bd-grid">
           <div>
             <h2 class="skills__subtitle">Professional Skills</h2>
-            <p class="skills__text"></p>
-
             <div class="skills__data">
               <div class="skills__names">
                 <i class="bx bxl-adobe skills__icon"></i>
                 <span class="skills__name">Adobe Illustrator</span>
               </div>
               <div class="skills__bar skills__illustrator"></div>
-              <div>
-                <span class="skills__percentage">90%</span>
-              </div>
+              <span class="skills__percentage">90%</span>
             </div>
 
             <div class="skills__data">
@@ -145,9 +136,7 @@
                 <span class="skills__name">Adobe Photoshop</span>
               </div>
               <div class="skills__bar skills__photoshop"></div>
-              <div>
-                <span class="skills__percentage">85%</span>
-              </div>
+              <span class="skills__percentage">85%</span>
             </div>
 
             <div class="skills__data">
@@ -156,9 +145,7 @@
                 <span class="skills__name">Premiere Pro</span>
               </div>
               <div class="skills__bar skills__premiere"></div>
-              <div>
-                <span class="skills__percentage">80%</span>
-              </div>
+              <span class="skills__percentage">80%</span>
             </div>
 
             <div class="skills__data">
@@ -167,68 +154,101 @@
                 <span class="skills__name">After Effects</span>
               </div>
               <div class="skills__bar skills__aftereffects"></div>
-              <div>
-                <span class="skills__percentage">75%</span>
-              </div>
+              <span class="skills__percentage">75%</span>
             </div>
           </div>
-
           <div>
-            <img src="assets/img/work3.jpg" alt="" class="skills__img" />
+            <img
+              src="assets/img/work3.jpg"
+              alt="Skills Showcase"
+              class="skills__img"
+            />
           </div>
+        </div>
+      </section>
+
+      <!--===== WORK =====-->
+      <section class="work section" id="work">
+        <h2 class="section-title">Work</h2>
+        <div class="work__container bd-grid">
+          <a href="#" class="work__img"
+            ><img src="assets/img/1.jpg" alt="Project 1"
+          /></a>
+          <a href="#" class="work__img"
+            ><img src="assets/img/2.jpg" alt="Project 2"
+          /></a>
+          <a href="#" class="work__img"
+            ><img src="assets/img/3.jpg" alt="Project 3"
+          /></a>
         </div>
       </section>
 
       <!--===== CONTACT =====-->
       <section class="contact section" id="contact">
-  <h2 class="section-title">Contact</h2>
+        <h2 class="section-title">Contact</h2>
+        <div class="contact__container bd-grid">
+          <form class="contact__form" id="contactForm">
+            <input
+              type="text"
+              id="name"
+              placeholder="Name"
+              class="contact__input"
+            />
+            <input
+              type="email"
+              id="email"
+              placeholder="Email"
+              class="contact__input"
+            />
+            <textarea
+              id="message"
+              rows="10"
+              placeholder="Message"
+              class="contact__input"
+            ></textarea>
+            <input
+              type="button"
+              value="Kirim"
+              class="contact__button button"
+              onclick="sendWhatsAppMessage()"
+            />
+          </form>
+        </div>
+      </section>
 
-  <div class="contact__container bd-grid">
-    <form action="" class="contact__form" id="contactForm">
-      <input type="text" id="name" placeholder="Name" class="contact__input" />
-      <input type="email" id="email" placeholder="Email" class="contact__input" />
-      <textarea
-        id="message"
-        cols="0"
-        rows="10"
-        placeholder="Message"
-        class="contact__input"
-      ></textarea>
-      <input type="button" value="Kirim" class="contact__button button" onclick="sendWhatsAppMessage()" />
-    </form>
-  </div>
-</section>
+      <!-- JS untuk Kirim WhatsApp -->
+      <script>
+        function sendWhatsAppMessage() {
+          const name = document.getElementById("name").value;
+          const email = document.getElementById("email").value;
+          const message = document.getElementById("message").value;
+          const phoneNumber = "+6281322789164";
+          const whatsappUrl = `https://wa.me/${phoneNumber}?text=Halo,%20saya%20${name}.%20Email%20saya:%20${email}.%20Pesan:%20${message}`;
+          window.open(whatsappUrl, "_blank");
+        }
+      </script>
 
-    <!-- code js untuk mengeksekusi agar kontak bisa nyambung ke wa -->
-    <script>
-      function sendWhatsAppMessage() {
-        const name = document.getElementById("name").value;
-        const email = document.getElementById("email").value;
-        const message = document.getElementById("message").value;
-        const phoneNumber = "+6281322789164"; // Ganti dengan nomor WhatsApp tujuan, gunakan kode negara (contoh: 62 untuk Indonesia)
+      <!--===== FOOTER =====-->
+      <footer class="footer">
+        <p class="footer__title">Diki Sugiri</p>
+        <div class="footer__social">
+          <a href="#" class="footer__icon" aria-label="Facebook"
+            ><i class="bx bxl-facebook"></i
+          ></a>
+          <a href="#" class="footer__icon" aria-label="Instagram"
+            ><i class="bx bxl-instagram"></i
+          ></a>
+          <a href="#" class="footer__icon" aria-label="Twitter"
+            ><i class="bx bxl-twitter"></i
+          ></a>
+        </div>
+        <p class="footer__copy">© 2024 Diki Sugiri. All rights reserved.</p>
+      </footer>
 
-        const whatsappUrl = `https://wa.me/${phoneNumber}?text=Halo,%20saya%20${name}.%20Email%20saya:%20${email}.%20Pesan:%20${message}`;
-
-        window.open(whatsappUrl, "_blank");
-      }
-    </script>
-    <!-- endcode js -->
-
-    <!--===== FOOTER =====-->
-    <footer class="footer">
-      <p class="footer__title"></p>
-      <div class="footer__social">
-        <a href="#" class="footer__icon"><i class="bx bxl-facebook"></i></a>
-        <a href="#" class="footer__icon"><i class="bx bxl-instagram"></i></a>
-        <a href="#" class="footer__icon"><i class="bx bxl-twitter"></i></a>
-      </div>
-      <p class="footer__copy">© 2024 Diki Sugiri. All rights reserved.</p>
-    </footer>
-
-    <!--===== SCROLL REVEAL =====-->
-    <script src="https://unpkg.com/scrollreveal"></script>
-
-    <!--===== MAIN JS =====-->
-    <script src="assets/js/main.js"></script>
+      <!-- SCROLL REVEAL -->
+      <script src="https://unpkg.com/scrollreveal"></script>
+      <!-- MAIN JS -->
+      <script src="assets/js/main.js"></script>
+    </main>
   </body>
 </html>
